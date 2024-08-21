@@ -150,5 +150,14 @@ public class DishServiceImpl implements DishService {
         }
     }
 
+    /**
+     * 根据类别id查询菜品集合
+     * @param categoryId
+     * @return
+     */
+    public List<Dish> getDishesByCategoryId(String categoryId) {
+        return dishMapper.getDishesByCategoryId(categoryId);
+    }
+
 
 }
