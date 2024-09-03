@@ -49,7 +49,7 @@ public interface SetmealMapper {
      * @return
      */
     @Select("select * from sky_take_out.setmeal where id = #{id}")
-    Setmeal getById(String id);
+    Setmeal getById(Long id);
 
     /**
      * 根据套餐id查询套餐包含的菜品
@@ -57,7 +57,7 @@ public interface SetmealMapper {
      * @return
      */
     @Select("select * from sky_take_out.setmeal_dish where setmeal_id = #{setmealId}")
-    List<SetmealDish> getDishesById(String setmealId);
+    List<SetmealDish> getDishesById(Long setmealId);
 
     /**
      * 更新套餐信息
@@ -95,4 +95,5 @@ public interface SetmealMapper {
             "from sky_take_out.setmeal_dish sd left join sky_take_out.dish d on sd.dish_id = d.id " +
             "where sd.setmeal_id = #{setmealId}")
     List<DishItemVO> getDishItemBySetmealId(Long setmealId);
+
 }

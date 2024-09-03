@@ -64,7 +64,7 @@ public class SetmealServiceImpl implements SetmealService {
      * @param id
      * @return
      */
-    public SetmealVO getById(String id) {
+    public SetmealVO getById(Long id) {
         SetmealVO setmealVO = new SetmealVO();
         // 查询套餐基本信息
         Setmeal setmeal = setmealMapper.getById(id);

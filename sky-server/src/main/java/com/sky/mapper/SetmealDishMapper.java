@@ -28,4 +28,6 @@ public interface SetmealDishMapper {
      */
     @Delete("delete from sky_take_out.setmeal_dish where setmeal_id = #{id}")
     void delete(Long id);
+
+
 }

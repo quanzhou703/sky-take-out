@@ -61,5 +61,5 @@ public interface CategoryMapper {
      * @return
      */
     @Select("select name from sky_take_out.category where id = #{id}")
-    String getCategoryNameById(String id);
+    String getCategoryNameById(Long id);
 }

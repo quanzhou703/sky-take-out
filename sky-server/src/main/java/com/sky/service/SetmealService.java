@@ -34,7 +34,7 @@ public interface SetmealService {
      * @param id
      * @return
      */
-    SetmealVO getById(String id);
+    SetmealVO getById(Long id);
 
     /**
      * 修改套餐
